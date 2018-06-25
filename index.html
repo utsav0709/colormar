@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>COLORMAR ACADEMY</title>
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="./resources/images/favicon.ico">
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
@@ -10,26 +12,26 @@
 
     <!-- Header & Navigation Area -->
 
-    <div class="header-desktop">
-      <div class="header-desktop__logo">
+    <div class="header-desktop" role="presentation">
+      <header class="header-desktop__logo">
         <img src="./resources/images/ic-logo.svg" alt="colormar-logo">
         <h1>COLMAR<span>ACADEMY</span></h1>
-      </div>
-      <div class="header-desktop__nav">
+      </header>
+      <nav class="header-desktop__nav">
         <span>On campus</span>
         <span>Online</span>
         <span>or companies</span>
         <span>Sign in</span>
-      </div>
+      </nav>
     </div>
-    <div class="header-mobile">
-      <div class="header-mobile__logo">
+    <header class="header-mobile">
+      <nav class="header-mobile__logo">
         <img src="./resources/images/ic-logo.svg" alt="logo">
         <img src="./resources/images/ic-on-campus.svg" alt="on campus">
         <img src="./resources/images/ic-online.svg" alt="online">
         <img src="./resources/images/ic-login.svg" alt="login">
-      </div>
-    </div>
+      </nav>
+    </header>
 
     <!-- Bannner Area -->
 
@@ -68,7 +70,8 @@
       <div class="information__side">
         <div class="information__article-side">
           <div class="information__img-side">
-            <img src="./resources/images/information-orientation.jpg" alt="orientation">
+            <img src="./resources/images/information-orientation.jpg" alt="orientation" class="desktop-img">
+            <img src="./resources/images/information-orientation-mobile.jpg" alt="orientation" class="mobile-img">
           </div>
           <div class="information__content-side">
             <h2>Orientation date</h2>
@@ -78,7 +81,8 @@
         </div>
         <div class="information__article-side">
           <div class="information__img-side">
-            <img src="./resources/images/information-campus.jpg" alt="Our Campus">
+            <img src="./resources/images/information-campus.jpg" alt="Our Campus" class="desktop-img">
+            <img src="./resources/images/information-campus-mobile.jpg" alt="Our Campus" class="mobile-img">
           </div>
           <div class="information__content-side">
             <h2>Our campus</h2>
@@ -88,7 +92,9 @@
         </div>
         <div class="information__article-side information__article-side--color">
           <div class="information__img-side">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture">
+            <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture" class="desktop-img">
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Guest lecture"
+            class="mobile-img">
           </div>
           <div class="information__content-side">
             <h2>Our guest lecture</h2>
@@ -100,7 +106,7 @@
     </div>
 
     <!-- Courses Area -->
-    <div class="courses">
+    <div class="courses courses-desktop">
       <div class="courses__heading">
         <h2>Start Learning</h2>
       </div>
@@ -168,10 +174,31 @@
       </div>
       </div>
     </div>
+    <div class="courses-mobile">
+      <h1>Start Learning</h1>
+      <div class="courses">
+        <h2>Software engineering</h2>
+      </div>
+      <div class="courses">
+        <h2>Computer art</h2>
+      </div>
+      <div class="courses">
+        <h2>Design</h2>
+      </div>
+      <div class="courses">
+        <h2>Data</h2>
+      </div>
+      <div class="courses">
+        <h2>Business</h2>
+      </div>
+      <div class="courses">
+        <h2>Marketing</h2>
+      </div>
+    </div>
 
     <!-- Thesis Area -->
 
-    <div class="thesis">
+    <div class="thesis thesis-desktop">
       <div class="thesis__heading">
         <h2>Thesis exhibit</h2>
       </div>
@@ -213,13 +240,22 @@
         </div>
       </div>
     </div>
+    <div class="thesis-mobile">
+      <div class="thesis__heading">
+        <h2>Thesis exhibit</h2>
+      </div>
+      <div class="thesis__video">
+        <video src="./resources/videos/thesis.mp4" controls  preload="metadata" poster="./resources/images/video_poster.png">
+        </video>
+      </div>
+    </div>
 
     <!-- Footer Area -->
     <div class="footer">
       <div class="footer__copyright">
         <h3>&copy; 2016 Colmar Academy. All rights reserved</h3>
       </div>
-      <div class="footer__terms">
+      <div class="footer__terms footer-desktop">
         <span>Terms</span>
         <span>Privacy</span>
       </div>
